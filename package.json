@@ -1,0 +1,27 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "description": "chat server ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcaprani/chat.git"
+  },
+  "keywords": [
+    "chat",
+    "node",
+    "npm"
+  ],
+  "author": "dcaprani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcaprani/chat/issues"
+  },
+  "homepage": "https://github.com/dcaprani/chat#readme",
+  "dependencies": {
+    "ws": "^0.8.0"
+  }
+}

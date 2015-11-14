@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <title>WebSockets chat</title>
+    <script type="text/javascript" src="jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="client.js"></script>
+    
+    <style type="text/css">
+      body { font-family:Verdana, Arial, Sans-Serif; font-size:0.8em; padding:10px; }
+      
+      div#chat { display:none; }
+      div#chat div#log { height:300px; border:1px solid #ded; padding:10px; overflow:auto; }
+      div.message { margin-bottom:15px; padding-bottom:3px; border-bottom:1px dashed #ddd; }
+      div.message span.sender  { font-weight:bold; font-size:0.9em; }
+      div.message span.message { }    
+      #chat input { width:400px; }
+    </style>
+  </head>
+  <body>
+    <h1>Chat</h1>
+    
+    <div id="registration">
+      <h2>Join chat</h2>
+      
+      Nickname <input type="text" name="name">
+      <button type="button" name="register">Join chat</button>
+    </div>
+    
+    <div id="chat">
+      <div id="log"></div>
+      
+      <div id="controls">
+        <p>Say something as <span class="js-chat-nick chat-nick"></span>:
+          <input type="text" name="message" placeholder="Type something">
+          <button type="button" name="send">Send</button>
+      </div>
+    </div>
+  </body>
+</html>
